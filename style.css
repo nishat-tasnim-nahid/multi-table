@@ -1,12 +1,12 @@
-* {
+*{
     box-sizing: border-box;
-  }
+}
   
-  body {
+body {
     background-color: #f1f1f1;
-  }
-
-  #donateFrom{
+}
+/*.... form ....*/
+#donateFrom{
     background-color: #ffffff;
     margin: 70px auto;
     font-family: Raleway;
@@ -15,7 +15,8 @@
     min-width: 300px;
     border-radius: 15px;
     /* box-shadow: #04AA6D; */
-  }
+}
+
 #title{
    text-align: center;
    font-size: 50px;
@@ -25,19 +26,24 @@ h2{
     font-size: 25px;
     font-weight: normal;
 }
+
 .radioButton{
+    cursor: pointer;
     width: 25px;
     margin-right: 20px;
     border: 0px;
     height: 20px;
 }
+
 .radio{
     display: flex;
 }
+/* ...all p tag in table... */
 p{
     font-size: 20px;
     font-weight: normal;
 }
+
 input{
     width: 100%;
     padding: 15px;
@@ -55,7 +61,7 @@ input.invalid {
 .tab {
     display: none;
 }
-
+/* ...next-previous button... */
 button {
     background-color: #04AA6D;
     color: #ffffff;
@@ -64,17 +70,17 @@ button {
     font-size: 17px;
     font-family: Raleway;
     cursor: pointer;
-  }
+}
   
-  button:hover {
+button:hover {
     opacity: 0.8;
-  }
+}
   
-  #prevBtn {
+#prevBtn {
     background-color: #bbbbbb;
-  }
+}
 
-  /* Make circles that indicate the steps of the form: */
+/* Make circles that indicate the steps of the form: */
 .step {
     height: 15px;
     width: 15px;
@@ -84,12 +90,13 @@ button {
     border-radius: 50%;
     display: inline-block;
     opacity: 0.5;
-  }
+}
   
-  .step.active {
+.step.active {
     opacity: 1;
-  }
-  /* Mark the steps that are finished and valid: */
+}
+
+/* Mark the steps that are finished and valid: */
 .step.finish {
     background-color: #04AA6D;
-  }
+}

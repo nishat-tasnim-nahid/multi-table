@@ -10,7 +10,9 @@
 </head>
 
 <body>
+    <!-- form -->
     <form id="donateFrom" action="/action_page.php">
+        <!-- title -->
         <h1 id="title">Donate</h1>
 
         <!-- Circles which indicates the steps of the form: -->
@@ -21,10 +23,12 @@
             <span class="step"></span>
         </div>
 
+        <!-- tables -->
+
+        <!-- single table -->
         <div class="tab">
             <p>1</p>
             <h2>Donation Type:</h2>
-
             <div class="radio">
                 <p><input class="radioButton" type="radio" name="payment" id="online" value="online"></p>
                 <p><label for="html">Online payment</label></p>
@@ -34,9 +38,9 @@
                 <p><input class="radioButton" type="radio" name="payment" id="bank" value="bank"></p>
                   <p><label for="css">Bank payment</label></p>
             </div>
-
         </div>
 
+        <!-- single table -->
         <div class="tab">
             <p>2</p>
             <div class="radio">
@@ -48,9 +52,9 @@
                 <p><input class="radioButton" type="radio" name="share" id="existingShare" value="existing"></p>
                   <p><label for="css">Existing share payment</label></p>
             </div>
-
         </div>
 
+        <!-- single table -->
         <div class="tab">
             <p>3</p>
             <h2>Full Name (as state in ID/Passport)</h2>
@@ -63,7 +67,8 @@
             <p><input placeholder="Total Amount" oninput="this.className = ''" name="fname"></p>
 
             <h2>Bank or Money Receipt</h2>
-            <p><input placeholder="money" oninput="this.className = ''" name="fname"></p>
+            <!-- <label for="myfile"></label> -->
+            <input type="file" id="myfile" name="filename" multiple>
         </div>
 
         <!-- previous next -->
@@ -74,12 +79,7 @@
             </div>
         </div>
 
-
     </form>
-
-
-
-
     <script src="custom.js"></script>
 </body>
 
