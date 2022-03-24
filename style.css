@@ -14,7 +14,7 @@ body {
     width: 40%;
     min-width: 300px;
     border-radius: 15px;
-    /* box-shadow: #04AA6D; */
+    /* box-shadow: 5px 5px #e8e8e8; */
 }
 
 #title{
@@ -63,6 +63,7 @@ input.invalid {
 }
 /* ...next-previous button... */
 button {
+    margin-top: 20px;
     background-color: #04AA6D;
     color: #ffffff;
     border: none;
@@ -70,6 +71,7 @@ button {
     font-size: 17px;
     font-family: Raleway;
     cursor: pointer;
+
 }
   
 button:hover {

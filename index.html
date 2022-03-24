@@ -41,22 +41,24 @@
         </div>
 
         <!-- single table -->
-        <div class="tab">
+        <div class="tab" id="chooseShare">
             <p>2</p>
             <div class="radio">
-                <p><input class="radioButton" type="radio" name="share" id="newShare" value="new"></p>
+                <p><input onclick="showFrom1()" class="radioButton" type="radio" name="share" id="newShare"
+                        value="new"></p>
                 <p><label for="html">New share</label></p>
             </div>
 
             <div class="radio">
-                <p><input class="radioButton" type="radio" name="share" id="existingShare" value="existing"></p>
-                  <p><label for="css">Existing share payment</label></p>
+                <p><input onclick="showFrom2()" class="radioButton" type="radio" name="share" id="existingShare"
+                        value="existing"></p>
+                <p><label for="css">Existing share payment</label></p>
             </div>
         </div>
 
         <!-- single table -->
-        <div class="tab">
-            <p>3</p>
+        <div class="tab" id="form1" style="display:none">
+            <h4>3A</h4>
             <h2>Full Name (as state in ID/Passport)</h2>
             <p><input placeholder="Full Name (as state in ID/Passport)" oninput="this.className = ''" name="fname"></p>
 
@@ -66,9 +68,25 @@
             <h2>Total Amount</h2>
             <p><input placeholder="Total Amount" oninput="this.className = ''" name="fname"></p>
 
-            <h2>Bank or Money Receipt</h2>
-            <!-- <label for="myfile"></label> -->
-            <input type="file" id="myfile" name="filename" multiple>
+             <h2>Bank or Money Receipt</h2>
+            <input type="file" id="myfile" name="filename" multiple> 
+        </div>
+
+        <!-- single table -->
+
+        <div class="tab" id="form2"  style="display:none">
+            <h4>3B</h4>
+            <h2>Full Name (as state in ID/Passport)</h2>
+            <p><input placeholder="Full Name (as state in ID/Passport)" oninput="this.className = ''" name="fname"></p>
+
+            <h2>Phone</h2>
+            <p><input placeholder="Phone" oninput="this.className = ''" name="fname"></p>
+
+            <h2>Total Amount</h2>
+            <p><input placeholder="Total Amount" oninput="this.className = ''" name="fname"></p>
+
+             <h2>Bank or Money Receipt</h2>
+            <input type="file" id="myfile" name="filename" multiple> 
         </div>
 
         <!-- previous next -->
@@ -80,6 +98,9 @@
         </div>
 
     </form>
+
+    
+
     <script src="custom.js"></script>
 </body>
 
