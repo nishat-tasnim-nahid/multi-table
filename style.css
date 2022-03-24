@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+  }
+
+  #donateFrom{
+    background-color: #ffffff;
+    margin: 70px auto;
+    font-family: Raleway;
+    padding: 10px 50px 40px 50px;
+    width: 40%;
+    min-width: 300px;
+    border-radius: 15px;
+    /* box-shadow: #04AA6D; */
+  }
+#title{
+   text-align: center;
+   font-size: 50px;
+   font-weight: normal;
+}
+h2{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+input{
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+    font-family: Raleway;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.tab {
+    display: none;
+}
+
+button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+
+  /* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  /* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+  }
